@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windapsearch"
+version = "1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "pyasn1>=0.4.5",
+    "pyasn1-modules>=0.2.5",
+    "python-ldap>=3.2.0",
+]
+
+[project.scripts]
+windapsearch = "windapsearch:main"
